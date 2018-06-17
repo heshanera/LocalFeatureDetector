@@ -36,6 +36,7 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 # Object Files
 OBJECTFILES= \
 	${OBJECTDIR}/EdgeDetector.o \
+	${OBJECTDIR}/FeatureMatcher.o \
 	${OBJECTDIR}/main.o
 
 
@@ -67,6 +68,11 @@ ${OBJECTDIR}/EdgeDetector.o: EdgeDetector.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -g `pkg-config --cflags opencv` -std=c++14  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/EdgeDetector.o EdgeDetector.cpp
+
+${OBJECTDIR}/FeatureMatcher.o: FeatureMatcher.cpp
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g `pkg-config --cflags opencv` -std=c++14  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/FeatureMatcher.o FeatureMatcher.cpp
 
 ${OBJECTDIR}/main.o: main.cpp
 	${MKDIR} -p ${OBJECTDIR}

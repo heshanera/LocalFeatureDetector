@@ -7,12 +7,14 @@
 
 #include "EdgeDetector.hpp"
 
-EdgeDetector::EdgeDetector() {
+EdgeDetector::EdgeDetector() { }
+
+EdgeDetector::EdgeDetector(const EdgeDetector& orig) { }
+
+EdgeDetector::~EdgeDetector() { }
+
+int EdgeDetector::detect() {
+
 }
 
-EdgeDetector::EdgeDetector(const EdgeDetector& orig) {
-}
-
-EdgeDetector::~EdgeDetector() {
-}
 

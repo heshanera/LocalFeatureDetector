@@ -13,6 +13,9 @@ public:
     EdgeDetector();
     EdgeDetector(const EdgeDetector& orig);
     virtual ~EdgeDetector();
+    
+    int detect();
+    
 private:
 
 };

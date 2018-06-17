@@ -5,6 +5,7 @@
                    displayName="Header Files"
                    projectFiles="true">
       <itemPath>EdgeDetector.hpp</itemPath>
+      <itemPath>FeatureMatcher.hpp</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
                    displayName="Resource Files"
@@ -14,6 +15,7 @@
                    displayName="Source Files"
                    projectFiles="true">
       <itemPath>EdgeDetector.cpp</itemPath>
+      <itemPath>FeatureMatcher.cpp</itemPath>
       <itemPath>main.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
@@ -53,6 +55,10 @@
       </item>
       <item path="EdgeDetector.hpp" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="FeatureMatcher.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="FeatureMatcher.hpp" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
     </conf>
@@ -79,6 +85,10 @@
       <item path="EdgeDetector.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="EdgeDetector.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="FeatureMatcher.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="FeatureMatcher.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
