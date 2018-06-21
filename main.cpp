@@ -5,15 +5,17 @@
  * Created on June 17, 2018, 2:43 PM
  */
 
-
 #include "FeatureMatcher.hpp"
+#include "EdgeDetector.hpp"
 
-int main( int argc, char** argv ) {
-  
+
+int main( ) {
+    
     FeatureMatcher fm;
     fm.match();
     
-    return 0;
+    EdgeDetector ed;
+    ed.detect();
     
 }
 

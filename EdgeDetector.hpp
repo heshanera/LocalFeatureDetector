@@ -8,15 +8,16 @@
 #ifndef EDGEDETECTOR_HPP
 #define EDGEDETECTOR_HPP
 
+#include "opencv2/imgproc/imgproc.hpp"
+#include "opencv2/imgcodecs.hpp"
+#include "opencv2/highgui/highgui.hpp"
+
 class EdgeDetector {
 public:
     EdgeDetector();
-    EdgeDetector(const EdgeDetector& orig);
-    virtual ~EdgeDetector();
-    
     int detect();
-    
 private:
+    
 
 };
 
