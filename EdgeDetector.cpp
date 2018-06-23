@@ -21,7 +21,7 @@ int EdgeDetector::detect() {
     std::string outFiles[] = {"output/output3.jpg", "output/output4.jpg"};
     
     for (int i = 0; i < 2; i++) {
-        img = cv::imread( ("trackers/Fish/img/"+inFiles[i]), CV_LOAD_IMAGE_GRAYSCALE);
+        img = cv::imread( ("data/Fish/img/"+inFiles[i]), CV_LOAD_IMAGE_GRAYSCALE);
         if( img.empty() ) return -1; 
         cv::blur( img, detected_edges, cv::Size(3,3) );
         cv::Canny( img, detected_edges, lowThreshold, highThreshold, kernel_size );

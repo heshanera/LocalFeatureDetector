@@ -9,15 +9,11 @@
 
 FeatureMatcher::FeatureMatcher() { }
 
-FeatureMatcher::FeatureMatcher(const FeatureMatcher& orig) { }
-
-FeatureMatcher::~FeatureMatcher() { }
-
 int FeatureMatcher::match() {
 
     // reading images
-    cv::Mat img_1 = cv::imread("trackers/Fish/img/0001.jpg", CV_LOAD_IMAGE_UNCHANGED);
-    cv::Mat img_2 = cv::imread("trackers/Fish/img/0199.jpg", CV_LOAD_IMAGE_UNCHANGED);
+    cv::Mat img_1 = cv::imread("data/Fish/img/0001.jpg", CV_LOAD_IMAGE_UNCHANGED);
+    cv::Mat img_2 = cv::imread("data/Fish/img/0199.jpg", CV_LOAD_IMAGE_UNCHANGED);
     if(!img_1.data || !img_2.data) {
         std::cout<<"input files Error!"<<std::endl;
         return -1;

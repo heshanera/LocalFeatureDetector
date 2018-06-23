@@ -20,11 +20,7 @@
 class FeatureMatcher {
 public:
     FeatureMatcher();
-    FeatureMatcher(const FeatureMatcher& orig);
-    virtual ~FeatureMatcher();
-    
     int match();
-    
 private:
 
 };
